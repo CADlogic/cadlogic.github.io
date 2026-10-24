@@ -1,28 +1,82 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
-  <title>Angelo Speciale</title>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 420px; margin: 40px auto; padding: 0 20px; text-align: center; }
-    h1 { margin-bottom: 4px; }
-    p { color: #555; margin: 4px 0; }
-    a.btn { display: block; margin: 12px 0; padding: 14px; border-radius: 10px; background: #0a66c2; color: #fff; text-decoration: none; font-weight: 600; }
-    a.alt { background: #eee; color: #222; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelo Speciale - NPI Engineer</title>
+    
+    <!-- Meta Tag per condivisione (WhatsApp, Telegram, Email) -->
+    <meta property="og:title" content="Angelo Speciale - NPI Engineer">
+    <meta property="og:description" content="Bitron Electronics S.p.A. - Clicca per salvare il contatto">
+    <meta property="og:type" content="profile">
+    
+    <!-- Tailwind CSS (Framework per lo stile) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome (Libreria per le icone) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Configurazione Dark Mode automatica -->
+    <script>
+        tailwind.config = {
+            darkMode: 'media', 
+        }
+    </script>
 </head>
-<body>
-  <h1>Angelo Speciale</h1>
-  <p>NPI Engineer</p>
-  <p>Bitron Electronics S.p.A.</p>
-  <p>Str. del Portone, 95, 10095 Grugliasco TO</p>
-  <a class="btn" href="contatto.vcf">Salva contatto</a>
-  <a class="btn alt" href="mailto:angelo.speciale@bitron.com">Scrivi una email</a>
-  <!--
-  <a class="btn alt" href="tel:[+39 numero aziendale]">Chiama</a>
-  <a class="btn alt" href="https://www.linkedin.com/in/[tuo-profilo]">LinkedIn</a>
-  -->
+<body class="bg-gray-100 dark:bg-gray-900 flex items-center justify-center min-h-screen p-4 font-sans text-gray-800 dark:text-gray-200 transition-colors duration-300">
+
+    <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl max-w-sm w-full overflow-hidden transition-colors duration-300">
+        
+        <!-- Banner superiore -->
+        <div class="h-32 bg-blue-700 dark:bg-blue-900 w-full"></div>
+        
+        <!-- Immagine di Profilo -->
+        <div class="flex justify-center -mt-16">
+            <!-- Sostituisci il link in 'src' con la foto reale se disponibile -->
+            <img class="h-32 w-32 rounded-full border-4 border-white dark:border-gray-800 object-cover bg-white" 
+                 src="https://ui-avatars.com/api/?name=Angelo+Speciale&background=0D8ABC&color=fff&size=256" 
+                 alt="Angelo Speciale">
+        </div>
+        
+        <!-- Informazioni Principali -->
+        <div class="text-center px-6 py-4">
+            <h1 class="text-2xl font-bold">Angelo Speciale</h1>
+            <p class="text-blue-600 dark:text-blue-400 font-semibold mt-1">NPI Engineer</p>
+            <p class="text-sm mt-2"><i class="fa-solid fa-building mr-2"></i>Bitron Electronics S.p.A.</p>
+            
+            <!-- Indirizzo cliccabile verso Google Maps -->
+            <a href="https://maps.google.com/?q=Str.+del+Portone+95+10095+Grugliasco+TO" target="_blank" 
+               class="text-sm mt-2 text-gray-500 dark:text-gray-400 hover:text-blue-500 block transition duration-200">
+                <i class="fa-solid fa-location-dot mr-2"></i>Str. del Portone 95, 10095 Grugliasco TO
+            </a>
+        </div>
+
+        <!-- Pulsanti di Azione -->
+        <div class="px-6 py-4 grid grid-cols-2 gap-3">
+            <!-- Pulsante Download vCard -->
+            <a href="contatto.vcf" class="col-span-2 bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-xl font-medium transition shadow-sm flex justify-center items-center">
+                <i class="fa-solid fa-address-card mr-2"></i> Salva Contatto
+            </a>
+            
+            <!-- Pulsante Email -->
+            <a href="mailto:angelo.speciale@bitron.com" class="bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-center py-3 rounded-xl font-medium transition flex justify-center items-center text-gray-700 dark:text-gray-200">
+                <i class="fa-solid fa-envelope text-xl"></i>
+            </a>
+            
+            <!-- Pulsante Telefono (Inserire il numero di telefono corretto al posto di +39000000000) -->
+            <a href="tel:+39000000000" class="bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-center py-3 rounded-xl font-medium transition flex justify-center items-center text-gray-700 dark:text-gray-200">
+                <i class="fa-solid fa-phone text-xl"></i>
+            </a>
+        </div>
+
+        <!-- Footer / Social -->
+        <div class="bg-gray-50 dark:bg-gray-900 px-6 py-4 flex justify-center space-x-6 border-t border-gray-200 dark:border-gray-700 transition-colors">
+            <!-- Inserire il link al profilo LinkedIn in 'href' -->
+            <a href="https://linkedin.com/in/tuo-profilo" target="_blank" class="text-gray-400 hover:text-blue-600 transition text-2xl">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>
