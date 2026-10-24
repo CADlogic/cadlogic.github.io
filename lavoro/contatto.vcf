@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Speciale;Angelo;;;
+FN:Angelo Speciale
+ORG:Bitron
+TITLE:NPI Engineer
+EMAIL;TYPE=WORK:angelo.speciale@bitron.com
+ADR;TYPE=WORK:;;Strada del Portone 95;Grugliasco;TO;10095;Italia
+END:VCARD
